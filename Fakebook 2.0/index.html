@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakebook</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/app.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/fakebook-logo.png" alt="fakebook-logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="profile-button">Profile</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="post-form">
+            <textarea id="post-text" placeholder="Write your post..."></textarea>
+            <input type="file" id="image-upload" style="display: none;">
+            <button id="image-upload-button" type="button">Choose Image</button>
+            <button id="post-button" type="submit">Post</button>
+        </form>
+        <section id="posts">
+            <!-- Posts to be dynamically added here -->
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="close">&times;</div>
+            <div id="user-info">
+                <!-- User info to be dynamically added here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
